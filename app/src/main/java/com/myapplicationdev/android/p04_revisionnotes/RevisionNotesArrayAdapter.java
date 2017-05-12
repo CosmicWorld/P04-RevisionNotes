@@ -1,5 +1,5 @@
 package com.myapplicationdev.android.p04_revisionnotes;
-//
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
