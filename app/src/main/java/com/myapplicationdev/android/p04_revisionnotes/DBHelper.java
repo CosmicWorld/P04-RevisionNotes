@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class DBHelper extends SQLiteOpenHelper {
 
 	//TODO Define the Database properties
-	private static final String DATABASE_NAME = "";
+	private static final String DATABASE_NAME = "note.db";
 	private static final int DATABASE_VERSION = 1;
 	private static final String TABLE_NAME = "notes";
 	private static final String COLUMN_ID = "id";
@@ -80,7 +80,6 @@ public class DBHelper extends SQLiteOpenHelper {
         ArrayList<String> notes = new ArrayList<String>();
         // Select all the notes' content
         String selectQuery = "SELECT "+ COLUMN_NOTE + " FROM " + TABLE_NAME;
-
         // Get the instance of database to read
         SQLiteDatabase db = this.getReadableDatabase();
         // Run the SQL query and get back the Cursor object
